@@ -1,0 +1,35 @@
+
+Goals: Create a program that can sort an array of random numbers from least to greatest
+
+Input: swap() gets the two int* elements that need to be swaped
+       values[] will recive a random number for each elememt in the array from ranArray()	
+
+Output: print all the versions of the array while its being sorted
+	print finished array
+	sort() tells which int* elements need to be swaped
+	ranArray() will create and send the number to an element in the global values[] array
+
+Steps:
+	printValues()
+		- create a for loop that runs through the values array
+		- each cycle will print an element in the array
+
+	sort()
+		- implement the bubble sorting algorithm
+		- call the swap() function to switch the two elements identified
+		- keep repeting until the array is sorted 
+
+	swap()
+		- get the two constant int* elements and assign one to a temp variable
+		- swap on element with the other one then use the temp variable to complete the swap
+
+	ranArray()
+		-create variable that will hold the random number
+		-set a seed for the random numbers
+		-create a random number from 1-100
+		-send it to the global array values[]
+
+	main()
+		- print the origional array 
+		- sort using sort()
+		- then print the sorted array

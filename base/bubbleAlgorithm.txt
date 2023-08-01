@@ -1,0 +1,27 @@
+Goals: Create a program that can sort an array of numbers from least to greatest
+
+Input: swap() gets the two int* elements that need to be swaped
+	
+
+Output: print all the versions of the array while its being sorted
+	print finished array
+	sort() tells which int* elements need to be swaped
+
+Steps:
+	printValues()
+		- create a for loop that runs through the values array
+		- each cycle will print an element in the array
+
+	sort()
+		- implement the bubble sorting algorithm
+		- call the swap() function to switch the two elements identified
+		- keep repeting until the array is sorted 
+
+	swap()
+		- get the two constant int* elements and assign one to a temp variable
+		- swap on element with the other one then use the temp variable to complete the swap
+
+	main()
+		- print the origional array 
+		- sort using sort()
+		- then print the sorted array
